@@ -1,0 +1,137 @@
+name: Bug report
+description: Something in PDFNoLimit does not work as expected
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this — bug reports here are read.
+
+        > [!IMPORTANT]
+        > **Please never attach a confidential PDF.** Your documents are nobody
+        > else's business, including ours. If the problem is tied to one specific
+        > file, describe it instead: how many pages, whether it is scanned,
+        > which language, whether it is password-protected, roughly how large.
+        > That is almost always enough to reproduce it.
+
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Which tool?
+      options:
+        - PDF Editor
+        - Merge
+        - Split
+        - Compress
+        - Compare
+        - Convert (general)
+        - Crop
+        - Rotate
+        - Organize
+        - Page numbers
+        - Metadata
+        - Redact
+        - Sign
+        - Watermark
+        - Protect
+        - Unlock
+        - Repair
+        - Scan
+        - Word to PDF
+        - Excel to PDF
+        - PowerPoint to PDF
+        - Image to PDF
+        - HTML to PDF
+        - PDF to Word
+        - PDF to Excel
+        - PDF to PowerPoint
+        - PDF to Image
+        - Something else / the site itself
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: The address you were on when it happened.
+      placeholder: https://www.pdfnolimit.com/merge.html
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: If there was an error message, quote it exactly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. Select ...
+        4. The page ...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Does it happen every time?
+      options:
+        - Every time
+        - Only with one specific file
+        - Only sometimes, unpredictably
+        - It happened once
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: "Chrome 140, Firefox 131, Safari 18..."
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system and device
+      placeholder: "Windows 11, macOS 15, Android 15 on a Pixel 8..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Browser console output
+      description: >
+        Optional but very helpful. Press F12, open the Console tab, reproduce the
+        problem, and paste anything in red here.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: file
+    attributes:
+      label: About the file (if the bug is tied to one)
+      description: >
+        Describe it — do not attach it. Page count, scanned or digital, language,
+        password-protected, approximate size, how it was produced.
+    validations:
+      required: false

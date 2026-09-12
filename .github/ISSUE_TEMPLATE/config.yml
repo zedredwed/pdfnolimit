@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Use PDFNoLimit
+    url: https://www.pdfnolimit.com
+    about: The tools themselves — free, unlimited, nothing to install.
+  - name: Report a security vulnerability
+    url: https://github.com/zedredwed/pdfnolimit/security/policy
+    about: Please do not open a public issue for security problems.
+  - name: Privacy policy
+    url: https://www.pdfnolimit.com/privacy.html
+    about: What we do and do not collect.
